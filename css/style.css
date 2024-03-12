@@ -1,0 +1,86 @@
+  /* Create an accessible color palette using var()function */
+  /* https://www.w3schools.com/css/css3_variables.asp */
+
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+  * {
+     font-family: "Space Grotesk", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-style: normal;
+  }
+
+  #skip {
+     position: absolute;
+     top: -9999px;
+     left: -9999px;
+     transform: translate(-9999px, -9999px);
+     background-color: rgb(199, 199, 199);
+     color: black;
+  }
+
+  button {
+     background: white;
+  }
+
+  #skip:focus {
+     position: static;
+     transform: none;
+  }
+
+  form {
+     display: grid;
+     grid-template-columns: 50% 50%;
+     border: 1px solid #ccc;
+     border-radius: 16px;
+     width: 70%;
+     margin: 20px auto;
+     padding: 20px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     color: #702082;
+     background: #fff2cf;
+  }
+
+  .radio {
+     grid-column-start: 1;
+     grid-column-end: 3;
+     /* background: #575294; */
+     color: #702082;
+  }
+
+  #name {
+     width: 100%;
+     padding: 10px;
+     font-size: 18px;
+     font-weight: bold;
+     background: #ffffff;
+     color: #000000;
+  }
+
+  #message {
+     width: 100%;
+     padding: 10px;
+     resize: vertical;
+  }
+
+  input,
+  textarea {
+     padding: 10px;
+     border: 1px solid #f8f5f5;
+     width: 100%;
+  }
+
+  input[type="submit"] {
+     width: 100%;
+     padding: 10px;
+     background-color: #17671a;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+     background-color: #105213;
+  }
